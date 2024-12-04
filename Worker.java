@@ -21,6 +21,6 @@ public class Worker extends RecursiveAction {
                 e.printStackTrace();
             }
         }
-        if (!warehouse.isEmpty()) invokeAll(new Worker(warehouse), new Worker(warehouse));
+        if (!warehouse.isEmpty()) invokeAll(new Worker(warehouse), new Worker(warehouse), new Worker(warehouse));
     }
 }
